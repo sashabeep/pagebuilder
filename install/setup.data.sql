@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS `{PREFIX}pagebuilder` (
   `title` varchar(255) NOT NULL,
   `config` varchar(255) NOT NULL,
   `values` mediumtext NOT NULL,
-  `visible` tinyint(1) unsigned DEFAULT 1
+  `visible` tinyint(1) unsigned DEFAULT 1,
   `index` smallint(5) unsigned NOT NULL,
   `container` varchar(255) DEFAULT NULL
   PRIMARY KEY (`id`),
