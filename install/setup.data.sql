@@ -11,11 +11,5 @@ CREATE TABLE IF NOT EXISTS `{PREFIX}pagebuilder` (
   KEY `document_id` (`document_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;
 
-
-# Upgrading to v1.1.0
-
-# adding column for sections container
-
-# ALTER TABLE {PREFIX}pagebuilder ADD COLUMN container varchar(255) DEFAULT NULL AFTER document_id;
 ALTER TABLE {PREFIX}pagebuilder DROP INDEX `document_id`;
 ALTER TABLE {PREFIX}pagebuilder ADD INDEX `document_id` (`document_id`, `container`);
