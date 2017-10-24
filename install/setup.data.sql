@@ -7,7 +7,6 @@ CREATE TABLE IF NOT EXISTS `{PREFIX}pagebuilder` (
   `values` mediumtext NOT NULL,
   `visible` tinyint(1) unsigned DEFAULT 1,
   `index` smallint(5) unsigned NOT NULL,
-  `container` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `document_id` (`document_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;
